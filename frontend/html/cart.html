@@ -1,12 +1,12 @@
-
-<!DOCTYPE html>
+<!DOCTYPE <!DOCTYPE html>
 <html lang="vi">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Atsumaru</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
-        <link rel="stylesheet" href="../css/delivery.css"/>
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/cart.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css"/>
     </head>
     <body>
@@ -42,46 +42,29 @@
                     </div>
                 </div>
                 <div class="logo"><span style="color: blueviolet;">atsu</span><span style="color: #fff;">maru</span></div>
-                <div class="search"><input type="text" placeholder="Tìm kiếm"><button><i class="fa-solid fa-magnifying-glass"></button></i></div>
+                <div class="search"><input type="text" placeholder="Tìm kiếm"><button style="padding: 10px;"><i class="fa-solid fa-magnifying-glass"></button></i></div>
                 <div class="h-right"><button><i class="fa-solid fa-cart-shopping"></i></button> <button><i class="fa-solid fa-user"></i></button>
                 </div>
             </div>
         </div>
-        <div class="wr">
-            <h3>Thông tin giao hàng</h3>
-            <div class="info-box">
-                <div class="name"><input type="text" placeholder="Họ và tên"></div>
-            <div class="email-sdt"><input type="text" placeholder="Email"> <input type="text" placeholder="Số điện thoại"></div>
-            </div>
-            <div class="deliver-box">
-                <div class="chbox1"><input type="checkbox"> Giao hàng tận nơi</div>
-                <div class="add"><input type="text" placeholder="Địa chỉ">
-                    <div class="select"><select name="city" id="city">
-                        <option value="">Tỉnh/Thành</option>
-                      </select>
-                      <select name="city" id="city">
-                        <option value="">Quận/Huyện</option>
-                      </select>
-                      <select name="city" id="city">
-                        <option value="">Phường/Xã</option>
-                      </select>
+        <div class="wrap">
+            <div class="card">
+                <h3>Giỏ Hàng của bạn </h3>
+                <span>Bạn có 0 sản phẩm</span>
+                <div class="sum">
+                    <div class="left">
+                        <p>Tổng Sản Phẩm</p>
+                        <p>Giảm Giá</p>
+                        <p>Thanh Toán</p>
+                    </div>
+                    <div class="right">
+                        <p>0đ</p>
+                        <p>-0đ</p>
+                        <p>0đ</p>
                     </div>
                 </div>
-                <div class="chbox2"><input type="checkbox"> Nhận tại cửa hàng</div>
+                <button>Thanh toán</button>
             </div>
-            <h3>Phương thức vận chuyển</h3>
-            <div class="dv-box">
-                <div class="chbox3"><input type="checkbox"> Giao hàng thường (3-4 ngày) 20.000đ</div>
-                <div class="chbox4"><input type="checkbox"> Giao hàng nhanh (1-2 ngày) 30.000đ</div>
-                <div class="chbox5"><input type="checkbox"> Giao hoả tốc 40.000đ</div>
-            </div>
-            <h3>Phương thức thanh toán</h3>
-            <div class="pt-box">
-                <div class="chbox6"><input type="checkbox">  Thanh toán khi nhận hàng (COD)</div>
-                <div class="chbox7"><input type="checkbox">  Chuyển khoản ngân hàng</div>
-                <div class="chbox8"><input type="checkbox"> Ví momo</div>
-            </div>
-            <button>Xác nhận</button>
         </div>
         <footer>
             <hr />
@@ -136,6 +119,6 @@
               </div>
             </div>
         </footer>
-        <script src="/frontend/js/delivery.js"></script>
-</body>
+        <script src="/frontend/js/cart.js"></script>
+    </body>
 </html>
