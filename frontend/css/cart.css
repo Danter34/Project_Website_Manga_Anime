@@ -11,7 +11,7 @@ body{
     padding: 10px 20px;
     color: #fff;
 }
-.card{
+.cat{
     padding: 10px 20px;
     text-align: center;
 }
@@ -20,7 +20,7 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.card button{
+.cat button{
     width: 100%;
     border-radius: 20px;
     padding: 10px;

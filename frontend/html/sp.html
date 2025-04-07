@@ -1,0 +1,154 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atsumaru</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../css/sp.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css"/>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="head">
+            <div class="op">
+                <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" id="leftMenu">
+                    <button onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large"> &times;</button>
+                    <a href="/frontend/index.html" class="w3-bar-item w3-button">Home</a>
+                    <div class="dropdown">
+                        <a href="#" class="w3-bar-item w3-button">Thể Loại <i class="fa-solid fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                        <a href="#">Shounen</a>
+                        <a href="#">Seinen</a>
+                        <a href="#"> Kodomo</a>
+                        <a href="#">Shoujo</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="w3-bar-item w3-button">Loại Truyện <i class="fa-solid fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                        <a href="#">Manga</a>
+                        <a href="#">Manhua</a>
+                        <a href="#">Manhwua</a>
+                        </div>
+                    </div>
+                    <a href="#" class="w3-bar-item w3-button"><i class="fa-solid fa-cart-shopping"></i> Giỏ Hàng</a>
+                    <a href="#" class="w3-bar-item w3-button"><i class="fa-regular fa-heart"></i> Wishlist</a>
+                    <a href="#" class="w3-bar-item w3-button"><i class="fa-solid fa-user"></i> Login/Register</a>
+                </div>
+                <div class="">
+                    <button class="menu" onclick="openLeftMenu()"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </div>
+            <div class="logo"><span style="color: blueviolet;">atsu</span><span style="color: #fff;">maru</span></div>
+            <div class="search"><input type="text" placeholder="Tìm kiếm"><button style="padding: 10px;"><i class="fa-solid fa-magnifying-glass"></button></i></div>
+            <div class="h-right"><button><i class="fa-solid fa-cart-shopping"></i></button> <button><i class="fa-solid fa-user"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="slider-contai">
+            <div class="slide">
+                <div class="card"><img src="../img/sp/ranker.png" alt=""><p>Ranker return</p></div>
+                <div class="card"><img src="../img/sp/tgt.png" alt=""><p>The Game That Came From</p></div>
+                <div class="card"><img src="../img/sp/tel.png" alt=""><p>Tales Of Demon And Gods</p></div>
+                <div class="card"><img src="../img/sp/thebe.jpg" alt=""><p>The beginner after end</p></div>
+                <div class="card"><img src="../img/sp/oshi.jpg" alt=""><p>Oshi no Ko</p></div>
+            </div>
+        </div>
+        <div class="slider-contai">
+            <div class="slide">
+                <div class="card"><img src="../img/sp/top10/kaiju.jpg" alt=""><p>Kaju No.8</p></div>
+                <div class="card"><img src="../img/sp/top10/berserk.jpg" alt=""><p>Berserk</p></div>
+                <div class="card"><img src="../img/sp/top10/chain.jpg" alt=""><p>Chainsawn Man</p></div>
+                <div class="card"><img src="../img/sp/top10/demon.png" alt=""><p>Demon Slayer</p></div>
+                <div class="card"><img src="../img/sp/top10/ska.jpg" alt=""><p>Sakamoto Days</p></div>
+            </div>
+        </div>
+        <div class="slider-contai">
+            <div class="slide">
+                <div class="card"><img src="../img/sp/new/solo.png" alt=""><p>Solo Leveling Ragnarok</p></div>
+                <div class="card"><img src="../img/sp/new/villa.jpg" alt=""><p>Village Saga</p></div>
+                <div class="card"><img src="../img/sp/new/akuma.jpg" alt=""><p>Akuma wa Rozario</p></div>
+                <div class="card"><img src="../img/sp/new/vnag.jpg" alt=""><p>Vagabound</p></div>
+                <div class="card"><img src="../img/sp/new/uzumaki.jpg" alt=""><p>Uzumaki</p></div>
+            </div>
+        </div>
+        <div class="slider-contai">
+            <div class="slide">
+                <div class="card"><img src="../img/sp/last/return.png" alt=""><p>Return of Demon</p></div>
+                <div class="card"><img src="../img/sp/last/theoder.png" alt=""><p>the other world's wizard</p></div>
+                <div class="card"><img src="../img/sp/last/dragon.png "alt=""><p>Dragon Ball Super</p></div>
+                <div class="card"><img src="../img/sp/thegamer.jpg" alt=""><p>The Gamer</p></div>
+                <div class="card"><img src="../img/sp/top10/berserk.jpg" alt=""><p>Berserk</p></div>
+            </div>
+        </div>
+        <div class="cen">
+            <button class="prev"><i class="fa-solid fa-angles-left"></i></button>
+            <span class="d" style="background-color: blueviolet;">1</span>
+            <span class="d" >2</span>
+            <span class="d" >3</span>
+            <span class="d" >4</span>
+            <span class="d" >6</span>
+            <span class="d" >7</span>
+            <span class="d" >8</span>
+            <span class="d" >9</span>
+            <span class="d" >...</span>
+            <button class="next"><i class="fa-solid fa-angles-right"></i></button>
+        </div>
+    </div>
+    <footer>
+        <hr />
+        <div class="footer-section1">
+          <div class="section1-block1">
+            <p style="color: rgba(255, 255, 255, 0.8);"><i class="fa-regular fa-envelope"></i> Đăng ký nhận tin</p>
+          </div>
+          <div class="section1-block2">
+            <input style="background-color: #181818"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Nhập email của bạn:"
+            />
+            <span style="color: #fcfcfc; background-color: rgba(54, 54, 54, 0.8);">Đăng ký</span>
+          </div>
+          <div class="section1-block3">
+            <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-section2">
+          <div class="introduce">
+            <h2>GIỚI THIỆU</h2>
+            <p>
+                Atsumaru – Nền tảng truyện tranh & thương mại điện tử dành cho fan manga. Đọc truyện, mua sắm, kết nối đam mê!
+            </p>
+            <img src="../img/xac-nhan-bct.png" alt="Xác nhận bộ công thương" />
+          </div>
+          <div class="policy">
+            <h2>CHÍNH SÁCH</h2>
+            <ul>
+              <li><a href="#">Liên hệ</a></li>
+              <li><a href="#">Hình thức thanh toán</a></li>
+              <li><a href="#">Điều khoản dịch vụ</a></li>
+              <li><a href="#">Chính sách vận chuyển</a></li>
+              <li><a href="#">Chính sách đổi trả</a></li>
+              <li><a href="#">Chính sách bảo mật thông tin</a></li>
+            </ul>
+          </div>
+          <div class="contact">
+            <h2>THÔNG TIN LIÊN HỆ</h2>
+            <div class="cover-contact">
+              <p><i class="fa-solid fa-location-dot"></i> 27 Tôn Thất Tùng-Phường 8-TP Đà Lạt</p>
+            </div>
+            <div class="cover-contact">
+              <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+            </div>
+            <div class="cover-contact">
+              <p><i class="fa-regular fa-envelope"></i> atsumaru@gmail.com</p>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <script src="../js/sp.js"></script>
+</body>
+</html>
